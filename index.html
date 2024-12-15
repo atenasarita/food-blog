@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Food Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Ranchers&display=swap" rel="stylesheet">
+</head> 
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">atenas's house</div>
+            <ul class="navigation-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#recipes-main">recipes</a></li>
+                <li><a href="#recommendations-main">recommendations</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+    </nav>
+    <nav id="mobile-nav">
+        <div class="logo">atenas's house</div>
+        <div class="select-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#recipes-main">recipes</a></li>
+                <li><a href="#recommendations-main">recommendations</a></li>
+                <li><a href="#contact">contact</a></li>
+            </div>
+        </div>
+    </nav> 
+
+    <section id="banner-section"">
+        <div class="banner-container">
+            <img src="./assets/food-header-1.png" alt="Profile Picture Atenas Arita"/>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-pic-container">
+            <img src="./assets/about-pic-1.png" alt="Profile Picture Atenas Arita"/>
+        </div>
+
+        <div class="section_text">
+            <h1 class="title-1">i'm so happy you're here!</h1>
+            <p class="section__text__p2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum ipsum turpis, ut tempor eros dignissim sit amet. Etiam tristique purus eu purus tincidunt pellentesque. In hac habitasse platea dictumst. Aliquam auctor diam quis condimentum tincidunt. Donec magna purus, congue nec volutpat vitae, vestibulum a quam. Pellentesque nec est nunc. Cras venenatis mollis orci in cursus. Curabitur eleifend interdum est, sed blandit justo vestibulum vel. Donec et tristique massa, et imperdiet ex.
+
+                Quisque nec rutrum velit. Mauris ullamcorper a lorem et luctus. Vestibulum in libero nisi. In ac pellentesque libero, vel rutrum est. Aenean sit amet luctus ex. Ut metus est, tincidunt volutpat vehicula in, vestibulum a nisi. Mauris ante orci, fringilla a sem vel, interdum ornare ante. Morbi sed libero sit amet risus convallis sagittis. Sed dignissim nunc et risus pharetra blandit. </p>
+    
+            <div class="btn-container">
+                <button 
+                    class="button" 
+                    onclick="window.location.href='#recipes-main'"
+                    aria-label="Keep scrolling to view more recipes"
+                >
+                    keep scrolling for more!
+                </button>
+
+            </div>
+        </div>
+    </section>
+    <section id="recipes-main">
+        <h1 class="title"> recipes </h1>
+        <div class="section-container">
+            <div class="recipe-details-container">
+                <div class="recipe-containers">
+                    <div class="recipe-details">
+                        <img src="./assets/recipe-1.jpeg" 
+                            alt="Education Icon"
+                            class="recipe-img"/>
+                        <h2 class="project-title"> Recipe 1 </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum ipsum turpis, ut tempor eros dignissim sit amet. Etiam tristique purus eu purus tincidunt pellentesque. In hac habitasse platea dictumst. Aliquam auctor diam quis condimentum tincidunt.  </p>
+                        <p class="more-info-recipe" 
+                            onclick="location.href='recipes.html'"
+                            > view full recipe
+                        </p>
+                    </div>
+                    <div class="recipe-details">
+                        <img src="./assets/recipe-3.jpeg" 
+                            alt="Education Icon"
+                            class="recipe-img"/>
+                        <h2 class="project-title"> Recipe 2 </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum ipsum turpis, ut tempor eros dignissim sit amet. Etiam tristique purus eu purus tincidunt pellentesque. In hac habitasse platea dictumst. Aliquam auctor diam quis condimentum tincidunt.  </p>
+                        <p class="more-info-recipe" 
+                            onclick="location.href='recipes.html'"
+                            > view full recipe
+                        </p>
+                    </div>
+                    <div class="recipe-details">
+                        <img src="./assets/recipe-1.jpeg" 
+                            alt="Education Icon"
+                            class="recipe-img"/>
+                        <h2 class="project-title"> Recipe 3 </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum ipsum turpis, ut tempor eros dignissim sit amet. Etiam tristique purus eu purus tincidunt pellentesque. In hac habitasse platea dictumst. Aliquam auctor diam quis condimentum tincidunt.  </p>
+                        <p class="more-info-recipe" 
+                            onclick="location.href='recipes.html'"
+                        > view full recipe
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="more-info">
+                <p> Check out all recipes </p>
+                <img src="./assets/arrow.png" 
+                     alt="arrow image" 
+                     style="height: 70px;"
+                     onclick="location.href='recipes.html'">
+            </div>
+        </div>
+    </section>
+    <section id="recommendations-main">
+        <h1 class="title"> recommendations </h1>
+        <div class="section-container">
+            <div id="recom-section-text">
+                <p class="section__text__p2_2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum ipsum turpis, ut tempor eros dignissim sit amet. Etiam tristique purus eu purus tincidunt pellentesque. In hac habitasse platea dictumst. Aliquam auctor diam quis condimentum tincidunt. Donec magna purus, congue nec volutpat vitae, vestibulum a quam. 
+                    Pellentesque nec est nunc. Cras venenatis mollis orci in cursus. Curabitur eleifend interdum est, sed blandit justo vestibulum vel. Donec et tristique massa, et imperdiet ex. Quisque nec rutrum velit. Mauris ullamcorper a lorem et luctus.  </p>
+                <div class="more-info">
+                    <p onclick="location.href='recipes.html'"> jump onto the rest of my reviews </p>
+                </div>
+            </div>
+                <div class="recom-details-container">
+                <div class="recipe-containers">
+                    <div class="recom-details">
+                        <img src="./assets/recipe-1.jpeg" 
+                            alt="Education Icon"
+                            class="recipe-img"/>
+                        <h2 class="project-title"> Recipe 1 </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum ipsum turpis, ut tempor eros dignissim sit amet. Etiam tristique purus eu purus tincidunt pellentesque. In hac habitasse platea dictumst. </p>
+                        <p class="more-info" 
+                            onclick="location.href='recommendations.html'"
+                        > view full review
+                        </p>
+                    </div>
+                    <div class="recom-details">
+                        <img src="./assets/recipe-3.jpeg" 
+                            alt="Education Icon"
+                            class="recipe-img"/>
+                        <h2 class="project-title"> Recipe 2 </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum ipsum turpis, ut tempor eros dignissim sit amet. Etiam tristique purus eu purus tincidunt pellentesque. In hac habitasse platea dictumst. </p>
+                        <p class="more-info" 
+                            onclick="location.href='recommendations.html'"
+                            > view full review
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title">contact me!</h1>
+        <div class="contact-outer-section">
+            <div class="contact-info-container">
+                <img src="./assets/email.png"
+                     alt="Email Icon"
+                     class="icon"/>
+                     <p onclick="location.href='mailto:atenaslucia23@gmail.com'">atenaslucia23@gmail.com</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png"
+                     alt="Linked In Icon"
+                     class="icon"/>
+                <p class="contact-link-bottom"
+                   onclick="location.href='https://linkedin.com/in/atenas-lucía-arita-garcía-430331294'">My LinkedIn</p> 
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
